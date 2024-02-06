@@ -13,7 +13,7 @@
   "require": {
     "php": "~8.2",
     "ext-mbstring": "*",
-    "dentelis/php-structure-validator": "dev-master"
+    "dentelis/php-json-structure-validator": "dev-master"
   },
   "autoload": {
     "psr-4": {
