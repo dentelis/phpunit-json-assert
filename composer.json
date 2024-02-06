@@ -1,6 +1,6 @@
 {
   "name": "dentelis/phpunit-json-assert",
-  "description": "Data structure validation framework",
+  "description": "PhpUnit extension for asserting json structure with dentelis/php-structure-validator",
   "license": "MIT",
   "authors": [
     {
