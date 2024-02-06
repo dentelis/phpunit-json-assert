@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "319cbba648d3c907d0747c91a0cb07bc",
+    "content-hash": "ee0202e08503c827938677048e8852d9",
     "packages": [
         {
             "name": "dentelis/php-json-structure-validator",
@@ -1694,7 +1694,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "dentelis/php-json-structure-validator": 20,
         "phpunit/phpunit": 20
     },
     "prefer-stable": false,

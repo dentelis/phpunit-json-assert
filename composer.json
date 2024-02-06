@@ -9,11 +9,21 @@
       "homepage": "https://www.linkedin.com/in/dentelis/"
     }
   ],
+  "keywords": [
+    "phpunit",
+    "json",
+    "validator",
+    "validation",
+    "assert",
+    "assertion",
+    "testing",
+    "structure"
+  ],
   "type": "library",
   "require": {
     "php": "~8.2",
     "ext-mbstring": "*",
-    "dentelis/php-json-structure-validator": "^2.0.0@dev"
+    "dentelis/php-json-structure-validator": "^2.0.0"
   },
   "autoload": {
     "psr-4": {
