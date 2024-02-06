@@ -29,7 +29,7 @@ trait JsonAssertions
     ): void
     {
         Assert::assertTrue($type->validate(
-            is_string($jsonDocument) && json_validate($jsonDocument) ? json_decode($jsonDocument) : $jsonDocument
+            is_string($jsonDocument) ? json_decode($jsonDocument) : $jsonDocument
         ), $message);
     }
 
@@ -49,7 +49,7 @@ trait JsonAssertions
     {
         try {
             $result = $type->validate(
-                is_string($jsonDocument) && json_validate($jsonDocument) ? json_decode($jsonDocument) : $jsonDocument
+                is_string($jsonDocument) ? json_decode($jsonDocument) : $jsonDocument
             );
             Assert::assertFalse($result, $message);
         } catch (Throwable $e) {

@@ -5,7 +5,6 @@ namespace tests\JsonAssertions;
 
 use Dentelis\PhpUnitJsonAssert\JsonAssertions;
 use Dentelis\StructureValidator\Type\ArrayType;
-use Dentelis\StructureValidator\Type\IntegerType;
 use Dentelis\StructureValidator\Type\ObjectType;
 use Dentelis\StructureValidator\Type\StringType;
 use Dentelis\StructureValidator\TypeInterface;
@@ -23,14 +22,6 @@ final class JsonTest extends TestCase
     public static function successProvider(): array
     {
         return [
-            [
-                'foo',
-                (new StringType())
-            ],
-            [
-                1,
-                (new IntegerType())
-            ],
             [
                 '[]',
                 (new ArrayType())->assertEmpty()
@@ -79,14 +70,6 @@ final class JsonTest extends TestCase
     public static function failProvider(): array
     {
         return [
-            [
-                'foo',
-                (new IntegerType())
-            ],
-            [
-                1,
-                (new StringType())
-            ],
             [
                 '[]',
                 (new ArrayType())->assertNotEmpty()
